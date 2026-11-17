@@ -1,0 +1,221 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_sk_edi_einvoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-18 00:47+0000\n"
+"PO-Revision-Date: 2026-11-18 00:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_sk_edi_einvoice
+#: model:ir.module.module,description:base.module_l10n_sk_edi_einvoice
+msgid ""
+"\n"
+"Slovak specifics on top of the Peppol BIS Billing 3.0 e-invoice of Odoo, for the\n"
+"mandatory domestic e-invoicing that starts on 1 January 2027 (Act No. 385/2025\n"
+"amending the VAT Act No. 222/2004).\n"
+"\n"
+"The module is documented in doc/documentation_en.md (English) and\n"
+"doc/documentation_sk.md (Slovak). The legal sources of the rules are listed in\n"
+"docs/legislation_en.md and docs/legislation_sk.md of the repository.\n"
+msgstr ""
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_edi_xml_ubl_bis3.py:0
+msgid ""
+"%(partner)s has no VAT number (IC DPH). A supplier that is not registered "
+"for VAT can only invoice with taxes of the category 'O - Services outside "
+"scope of tax'."
+msgstr ""
+"%(partner)s nemá IČ DPH. Dodavatel, který není plátcem DPH, může fakturovat "
+"pouze s daněmi kategorie „O - Services outside scope of tax“."
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_edi_xml_ubl_bis3.py:0
+msgid ""
+"%(partner)s must be identified by its tax identification number (DIC, 10 "
+"digits): Slovak entities send and receive e-invoices under the Peppol "
+"identifier 0245:DIC. Fill in the DIC on the contact and select it as the "
+"routing identifier."
+msgstr ""
+"%(partner)s musí být identifikován daňovým identifikačním číslem (DIČ, 10 "
+"číslic): slovenské subjekty odesílají a přijímají elektronické faktury pod "
+"identifikátorem Peppol 0245:DIČ. Doplňte DIČ na kontaktu a vyberte ho jako "
+"směrovací identifikátor."
+
+#. module: l10n_sk_edi_einvoice
+#: model:ir.model,name:l10n_sk_edi_einvoice.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Šablona účtové osnovy"
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_move_send.py:0
+msgid "Check Invoice(s)"
+msgstr "Zkontrolovat faktury"
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_move_send.py:0
+msgid "Check Partner(s)"
+msgstr "Zkontrolovat partnery"
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_move_send.py:0
+msgid ""
+"Complete these contacts before sending the Slovak e-invoice (%(partners)s): "
+"each needs its street, city and ZIP, its tax identification number (DIC, 10 "
+"digits) and, when it has one, a VAT number made of SK and 10 digits."
+msgstr ""
+"Před odesláním slovenské e-faktury doplňte tyto kontakty (%(partners)s): "
+"každý potřebuje ulici, město a PSČ, daňové identifikační číslo (DIČ, 10 "
+"číslic) a, má-li ho, IČ DPH ve tvaru SK a 10 číslic."
+
+#. module: l10n_sk_edi_einvoice
+#: model:ir.model,name:l10n_sk_edi_einvoice.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: l10n_sk_edi_einvoice
+#: model:ir.model.fields,field_description:l10n_sk_edi_einvoice.field_account_chart_template__display_name
+#: model:ir.model.fields,field_description:l10n_sk_edi_einvoice.field_account_edi_xml_ubl_bis3__display_name
+#: model:ir.model.fields,field_description:l10n_sk_edi_einvoice.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_sk_edi_einvoice.field_account_move_send__display_name
+#: model:ir.model.fields,field_description:l10n_sk_edi_einvoice.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Zobrazovaný název"
+
+#. module: l10n_sk_edi_einvoice
+#: model:ir.model.fields,field_description:l10n_sk_edi_einvoice.field_account_chart_template__id
+#: model:ir.model.fields,field_description:l10n_sk_edi_einvoice.field_account_edi_xml_ubl_bis3__id
+#: model:ir.model.fields,field_description:l10n_sk_edi_einvoice.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_sk_edi_einvoice.field_account_move_send__id
+#: model:ir.model.fields,field_description:l10n_sk_edi_einvoice.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_sk_edi_einvoice
+#: model:ir.model,name:l10n_sk_edi_einvoice.model_account_move
+msgid "Journal Entry"
+msgstr "Účetní záznam"
+
+#. module: l10n_sk_edi_einvoice
+#: model:ir.model,name:l10n_sk_edi_einvoice.model_account_move_send
+msgid "Shared Send Invoice Wizard Functions"
+msgstr "Společné funkce průvodce odesláním faktury"
+
+#. module: l10n_sk_edi_einvoice
+#: model:ir.module.module,summary:base.module_l10n_sk_edi_einvoice
+msgid ""
+"Slovak rules for the mandatory e-invoice (EN 16931 / Peppol BIS Billing 3.0)"
+msgstr ""
+"Slovenská pravidla pro povinnou elektronickou fakturu (EN 16931 / Peppol BIS"
+" Billing 3.0)"
+
+#. module: l10n_sk_edi_einvoice
+#: model:ir.module.module,shortdesc:base.module_l10n_sk_edi_einvoice
+msgid "Slovakia - E-invoicing (Peppol BIS Billing 3.0)"
+msgstr "Slovensko - Elektronická fakturace (Peppol BIS Billing 3.0)"
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_edi_xml_ubl_bis3.py:0
+msgid ""
+"The VAT number (IC DPH) '%(vat)s' of %(partner)s is not valid: it is made of"
+" the prefix SK followed by 10 digits."
+msgstr ""
+"IČ DPH „%(vat)s“ partnera %(partner)s není platné: tvoří ho předpona SK a 10"
+" číslic."
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_edi_xml_ubl_bis3.py:0
+msgid ""
+"The address of %(partner)s is incomplete (%(fields)s). The Slovak VAT Act "
+"requires the full address of the supplier and of the customer on the "
+"invoice."
+msgstr ""
+"Adresa partnera %(partner)s je neúplná (%(fields)s). Slovenský zákon o DPH "
+"vyžaduje na faktuře úplnou adresu dodavatele i odběratele."
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_edi_xml_ubl_bis3.py:0
+msgid ""
+"The credit note does not refer to the invoice it corrects. Create it with "
+"the Credit Note button of the original invoice, or reconcile it with that "
+"invoice before sending it."
+msgstr ""
+"Dobropis neodkazuje na fakturu, kterou opravuje. Vytvořte ho tlačítkem "
+"Dobropis na původní faktuře, nebo ho s ní před odesláním spárujte."
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_move_send.py:0
+msgid ""
+"The invoice date is not today. A Slovak e-invoice must state the day it is "
+"sent as its issue date: send it on the invoice date, or reset the invoice to"
+" draft and change its date first."
+msgstr ""
+"Datum faktury není dnešní. Slovenská elektronická faktura musí jako datum "
+"vystavení uvádět den, kdy se odesílá: odešlete ji v den uvedený na faktuře, "
+"nebo ji nejprve vraťte do návrhu a změňte datum."
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_edi_xml_ubl_bis3.py:0
+msgid ""
+"The invoice uses the reverse charge but %(partner)s has no VAT number (IC "
+"DPH). The domestic reverse charge only applies when the customer is "
+"registered for VAT."
+msgstr ""
+"Faktura používá přenesení daňové povinnosti, ale %(partner)s nemá IČ DPH. "
+"Tuzemské přenesení daňové povinnosti se uplatní pouze tehdy, když je "
+"odběratel plátcem DPH."
+
+#. module: l10n_sk_edi_einvoice
+#: model:ir.model,name:l10n_sk_edi_einvoice.model_account_edi_xml_ubl_bis3
+msgid "UBL BIS Billing 3.0.12"
+msgstr "UBL BIS Billing 3.0.12"
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_move_send.py:0
+msgid "View Invoice(s)"
+msgstr "Zobrazit faktury"
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_move_send.py:0
+msgid "View Partner(s)"
+msgstr "Zobrazit partnery"
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_edi_xml_ubl_bis3.py:0
+msgid "ZIP"
+msgstr "PSČ"
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_edi_xml_ubl_bis3.py:0
+msgid "city"
+msgstr "město"
+
+#. module: l10n_sk_edi_einvoice
+#. odoo-python
+#: code:addons/l10n_sk_edi_einvoice/models/account_edi_xml_ubl_bis3.py:0
+msgid "street"
+msgstr "ulice"
