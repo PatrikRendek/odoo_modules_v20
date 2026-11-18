@@ -1,0 +1,444 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_sk_edi_sapi
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-18 00:46+0000\n"
+"PO-Revision-Date: 2026-11-18 00:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move_send.py:0
+msgid "%(message)s Warnings of the service: %(warnings)s"
+msgstr "%(message)s Upozornění služby: %(warnings)s"
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move_send.py:0
+msgid ""
+"An invoice is delivered through one network only: with both selected, it "
+"goes through the Slovak delivery service and not through Peppol."
+msgstr ""
+"Faktura se doručuje jen jednou sítí: jsou-li vybrány obě, půjde přes "
+"slovenskou doručovací službu, ne přes Peppol."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move_send.py:0
+msgid "An unexpected error occurred, see the server log."
+msgstr "Došlo k neočekávané chybě, podívejte se do záznamu serveru."
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,help:l10n_sk_edi_sapi.field_res_company__l10n_sk_sapi_url
+#: model:ir.model.fields,help:l10n_sk_edi_sapi.field_res_config_settings__l10n_sk_sapi_url
+msgid ""
+"Base address of the SAPI-SK interface of the delivery service, ending with "
+"/sapi."
+msgstr "Základní adresa rozhraní SAPI-SK doručovací služby zakončená /sapi."
+
+#. module: l10n_sk_edi_sapi
+#: model_terms:ir.ui.view,arch_db:l10n_sk_edi_sapi.res_config_settings_view_form
+msgid "Bills Journal"
+msgstr "Deník přijatých faktur"
+
+#. module: l10n_sk_edi_sapi
+#: model_terms:ir.ui.view,arch_db:l10n_sk_edi_sapi.res_config_settings_view_form
+msgid "Client ID"
+msgstr "Client ID"
+
+#. module: l10n_sk_edi_sapi
+#: model_terms:ir.ui.view,arch_db:l10n_sk_edi_sapi.res_config_settings_view_form
+msgid "Client Secret"
+msgstr "Client Secret"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model,name:l10n_sk_edi_sapi.model_res_company
+msgid "Company"
+msgstr "Společnost"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model,name:l10n_sk_edi_sapi.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfigurační nastavení"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model,name:l10n_sk_edi_sapi.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields.selection,name:l10n_sk_edi_sapi.selection__account_move__l10n_sk_sapi_state__delivered
+msgid "Delivered"
+msgstr "Doručena"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_company__l10n_sk_sapi_provider
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_config_settings__l10n_sk_sapi_provider
+#: model_terms:ir.ui.view,arch_db:l10n_sk_edi_sapi.view_move_form
+msgid "Delivery Service"
+msgstr "Doručovací služba"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_company__l10n_sk_sapi_is_configured
+msgid "Delivery Service Connected"
+msgstr "Doručovací služba připojena"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_bank_statement_line__l10n_sk_sapi_document_id
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_move__l10n_sk_sapi_document_id
+msgid "Delivery Service Document"
+msgstr "Doklad v doručovací službě"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_bank_statement_line__l10n_sk_sapi_state_detail
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_move__l10n_sk_sapi_state_detail
+msgid "Delivery Service Message"
+msgstr "Zpráva doručovací služby"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_bank_statement_line__l10n_sk_sapi_idempotency_key
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_move__l10n_sk_sapi_idempotency_key
+msgid "Delivery Service Request Key"
+msgstr "Klíč požadavku doručovací služby"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_bank_statement_line__l10n_sk_sapi_state
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_move__l10n_sk_sapi_state
+msgid "Delivery Service Status"
+msgstr "Stav v doručovací službě"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_bank_statement_line__l10n_sk_sapi_check_date
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_move__l10n_sk_sapi_check_date
+msgid "Delivery Service Status Check"
+msgstr "Kontrola stavu v doručovací službě"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_move_send__display_name
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_company__display_name
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Zobrazovaný název"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields.selection,name:l10n_sk_edi_sapi.selection__account_move__l10n_sk_sapi_state__error
+msgid "Error"
+msgstr "Chyba"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields.selection,name:l10n_sk_edi_sapi.selection__account_move__l10n_sk_sapi_state__processing
+msgid "Handed over"
+msgstr "Předána"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_bank_statement_line__l10n_sk_sapi_is_sent
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_move__l10n_sk_sapi_is_sent
+msgid "Handed over to the Delivery Service"
+msgstr "Předána doručovací službě"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_account_move_send__id
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_company__id
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_config_settings__id
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,help:l10n_sk_edi_sapi.field_account_bank_statement_line__l10n_sk_sapi_document_id
+#: model:ir.model.fields,help:l10n_sk_edi_sapi.field_account_move__l10n_sk_sapi_document_id
+msgid "Identifier of the document at the delivery service."
+msgstr "Identifikátor dokladu v doručovací službě."
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_partner__invoice_sending_method
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_users__invoice_sending_method
+msgid "Invoice sending"
+msgstr "Odesílání faktur"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model,name:l10n_sk_edi_sapi.model_account_move
+msgid "Journal Entry"
+msgstr "Účetní záznam"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_company__l10n_sk_sapi_purchase_journal_id
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_config_settings__l10n_sk_sapi_purchase_journal_id
+msgid "Journal of Received E-invoices"
+msgstr "Deník přijatých e-faktur"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,help:l10n_sk_edi_sapi.field_res_company__l10n_sk_sapi_purchase_journal_id
+#: model:ir.model.fields,help:l10n_sk_edi_sapi.field_res_config_settings__l10n_sk_sapi_purchase_journal_id
+msgid ""
+"Journal the e-invoices downloaded from the delivery service are created in. "
+"Without it the first purchase journal of the company is used."
+msgstr ""
+"Deník, ve kterém se vytvářejí e-faktury stažené z doručovací služby. Není-li"
+" vyplněn, použije se první nákupní deník společnosti."
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields.selection,name:l10n_sk_edi_sapi.selection__res_company__l10n_sk_sapi_provider__other
+msgid "Other SAPI-SK service"
+msgstr "Jiná služba SAPI-SK"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields.selection,name:l10n_sk_edi_sapi.selection__account_move__l10n_sk_sapi_state__undeliverable
+msgid "Recipient not on the network"
+msgstr "Příjemce není v síti"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields.selection,name:l10n_sk_edi_sapi.selection__account_move__l10n_sk_sapi_state__rejected
+msgid "Rejected by the recipient"
+msgstr "Odmítnuta příjemcem"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_company__l10n_sk_sapi_client_id
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_config_settings__l10n_sk_sapi_client_id
+msgid "SAPI-SK Client ID"
+msgstr "SAPI-SK Client ID"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_company__l10n_sk_sapi_client_secret
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_config_settings__l10n_sk_sapi_client_secret
+msgid "SAPI-SK Client Secret"
+msgstr "SAPI-SK Client Secret"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_company__l10n_sk_sapi_url
+#: model:ir.model.fields,field_description:l10n_sk_edi_sapi.field_res_config_settings__l10n_sk_sapi_url
+msgid "SAPI-SK URL"
+msgstr "SAPI-SK URL"
+
+#. module: l10n_sk_edi_sapi
+#: model_terms:ir.ui.view,arch_db:l10n_sk_edi_sapi.res_config_settings_view_form
+msgid "SAPI-SK connection"
+msgstr "Spojení SAPI-SK"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.actions.server,name:l10n_sk_edi_sapi.ir_cron_l10n_sk_sapi_get_new_documents_ir_actions_server
+msgid "SAPI-SK: retrieve received e-invoices"
+msgstr "SAPI-SK: stažení přijatých e-faktur"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.actions.server,name:l10n_sk_edi_sapi.ir_cron_l10n_sk_sapi_update_states_ir_actions_server
+msgid "SAPI-SK: update delivery statuses"
+msgstr "SAPI-SK: aktualizace stavů doručení"
+
+#. module: l10n_sk_edi_sapi
+#: model_terms:ir.ui.view,arch_db:l10n_sk_edi_sapi.res_config_settings_view_form
+msgid "Send and receive e-invoices through a certified delivery service"
+msgstr "Odesílání a příjem e-faktur přes certifikovanou doručovací službu"
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/res_company.py:0
+msgid ""
+"Set the address and the credentials of the delivery service in the "
+"Accounting settings."
+msgstr ""
+"V nastavení účetnictví vyplňte adresu a přístupové údaje doručovací služby."
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model,name:l10n_sk_edi_sapi.model_account_move_send
+msgid "Shared Send Invoice Wizard Functions"
+msgstr "Sdílené funkce průvodce odesláním faktury"
+
+#. module: l10n_sk_edi_sapi
+#: model_terms:ir.ui.view,arch_db:l10n_sk_edi_sapi.res_config_settings_view_form
+msgid "Slovak Delivery Service"
+msgstr "Slovenská doručovací služba"
+
+#. module: l10n_sk_edi_sapi
+#: model_terms:ir.ui.view,arch_db:l10n_sk_edi_sapi.res_config_settings_view_form
+msgid "Test Connection"
+msgstr "Otestovat spojení"
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/res_company.py:0
+msgid "The address of the delivery service has to start with https://."
+msgstr "Adresa doručovací služby musí začínat na https://."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/res_company.py:0
+msgid ""
+"The company has no Peppol identifier: fill in its tax identification number "
+"(DIC)."
+msgstr ""
+"Společnost nemá identifikátor Peppol: vyplňte její daňové identifikační "
+"číslo (DIČ)."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move.py:0
+msgid "The company has no purchase journal for the received e-invoices."
+msgstr "Společnost nemá nákupní deník pro přijaté e-faktury."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/res_config_settings.py:0
+msgid "The connection to the delivery service works."
+msgstr "Spojení s doručovací službou funguje."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/res_company.py:0
+msgid ""
+"The delivery service cannot be reached. Check its address in the Accounting "
+"settings."
+msgstr ""
+"Doručovací služba je nedostupná. Zkontrolujte její adresu v nastavení "
+"účetnictví."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/res_company.py:0
+msgid "The delivery service did not answer in time."
+msgstr "Doručovací služba neodpověděla včas."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/res_company.py:0
+msgid ""
+"The delivery service redirects to another address. Check its address in the "
+"Accounting settings."
+msgstr ""
+"Doručovací služba přesměrovává na jinou adresu. Zkontrolujte její adresu v "
+"nastavení účetnictví."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/res_config_settings.py:0
+msgid "The delivery service refused the connection: %s"
+msgstr "Doručovací služba odmítla spojení: %s"
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move_send.py:0
+msgid "The delivery service rejected the document."
+msgstr "Doručovací služba doklad odmítla."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/res_company.py:0
+msgid "The delivery service sent an answer that cannot be read."
+msgstr "Doručovací služba poslala odpověď, kterou nelze přečíst."
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields,help:l10n_sk_edi_sapi.field_res_company__l10n_sk_sapi_provider
+#: model:ir.model.fields,help:l10n_sk_edi_sapi.field_res_config_settings__l10n_sk_sapi_provider
+msgid ""
+"The delivery status of the sent invoices is only followed for the services "
+"whose status interface is known. With another service the invoice stays in "
+"the Handed over status."
+msgstr ""
+"Stav doručení odeslaných faktur se sleduje jen u služeb, jejichž rozhraní "
+"stavů je známé. U jiné služby zůstává faktura ve stavu Předána."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move_send.py:0
+msgid "The e-invoice file (Peppol BIS Billing 3.0) of the invoice is missing."
+msgstr "Chybí soubor e-faktury (Peppol BIS Billing 3.0)."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move_send.py:0
+msgid ""
+"The e-invoice file of the invoice is not in the Peppol BIS Billing 3.0 "
+"format the delivery service takes. Reset the invoice to draft, confirm it "
+"and send it again."
+msgstr ""
+"Soubor e-faktury není ve formátu Peppol BIS Billing 3.0, který doručovací "
+"služba přijímá. Vraťte fakturu do návrhu, potvrďte ji a odešlete znovu."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move_send.py:0
+msgid "The e-invoice was handed over to the delivery service (document %s)."
+msgstr "E-faktura byla předána doručovací službě (doklad %s)."
+
+#. module: l10n_sk_edi_sapi
+#: model_terms:ir.ui.view,arch_db:l10n_sk_edi_sapi.view_move_form
+msgid "The e-invoice was not delivered through the delivery service."
+msgstr "E-faktura nebyla doručena přes doručovací službu."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move_send.py:0
+msgid "The invoice is being sent by another process already."
+msgstr "Fakturu již odesílá jiný proces."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move_send.py:0
+msgid "The invoice was not handed over to the delivery service."
+msgstr "Faktura nebyla předána doručovací službě."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move.py:0
+msgid ""
+"The received e-invoice could not be read. The file is attached to the bill."
+msgstr ""
+"Přijatou e-fakturu se nepodařilo načíst. Soubor je přiložen k faktuře."
+
+#. module: l10n_sk_edi_sapi
+#: model_terms:ir.ui.view,arch_db:l10n_sk_edi_sapi.res_config_settings_view_form
+msgid "URL"
+msgstr "URL"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields.selection,name:l10n_sk_edi_sapi.selection__res_company__l10n_sk_sapi_provider__verteco
+msgid "Verteco"
+msgstr "Verteco"
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move.py:0
+msgid ""
+"You cannot delete an invoice that was handed over to the delivery service. "
+"To cancel it, issue a credit note."
+msgstr ""
+"Fakturu předanou doručovací službě nelze smazat. Pro její zrušení vystavte "
+"dobropis."
+
+#. module: l10n_sk_edi_sapi
+#. odoo-python
+#: code:addons/l10n_sk_edi_sapi/models/account_move.py:0
+msgid ""
+"You cannot reset to draft an invoice that was handed over to the delivery "
+"service. To change it, issue a credit note."
+msgstr ""
+"Fakturu předanou doručovací službě nelze vrátit do návrhu. Pro její změnu "
+"vystavte dobropis."
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields.selection,name:l10n_sk_edi_sapi.selection__res_partner__invoice_sending_method__sk_sapi
+msgid "by Slovak delivery service"
+msgstr "přes slovenskou doručovací službu"
+
+#. module: l10n_sk_edi_sapi
+#: model:ir.model.fields.selection,name:l10n_sk_edi_sapi.selection__res_company__l10n_sk_sapi_provider__efakturuj
+msgid "eFakturuj"
+msgstr "eFakturuj"
+
+#. module: l10n_sk_edi_sapi
+#: model_terms:ir.ui.view,arch_db:l10n_sk_edi_sapi.res_config_settings_view_form
+msgid "https://.../sapi"
+msgstr "https://.../sapi"

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.l10n_sk_edi_sapi</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <block id="peppol" position="after">
+                <block title="Slovak Delivery Service" id="l10n_sk_sapi" invisible="country_code != 'SK'">
+                    <setting id="l10n_sk_sapi_connection"
+                             string="SAPI-SK connection"
+                             help="Send and receive e-invoices through a certified delivery service"
+                             company_dependent="1">
+                        <div class="content-group">
+                            <div class="row mt8">
+                                <label for="l10n_sk_sapi_provider" class="col-lg-4"/>
+                                <field name="l10n_sk_sapi_provider" class="col-lg-8"/>
+                            </div>
+                            <div class="row">
+                                <label for="l10n_sk_sapi_url" string="URL" class="col-lg-4"/>
+                                <field name="l10n_sk_sapi_url" class="col-lg-8" placeholder="https://.../sapi"/>
+                            </div>
+                            <div class="row">
+                                <label for="l10n_sk_sapi_client_id" string="Client ID" class="col-lg-4"/>
+                                <field name="l10n_sk_sapi_client_id" class="col-lg-8"/>
+                            </div>
+                            <div class="row">
+                                <label for="l10n_sk_sapi_client_secret" string="Client Secret" class="col-lg-4"/>
+                                <field name="l10n_sk_sapi_client_secret" class="col-lg-8" password="True"/>
+                            </div>
+                            <div class="row">
+                                <label for="l10n_sk_sapi_purchase_journal_id" string="Bills Journal" class="col-lg-4"/>
+                                <field name="l10n_sk_sapi_purchase_journal_id" class="col-lg-8"/>
+                            </div>
+                            <button name="action_l10n_sk_sapi_test_connection"
+                                    type="object"
+                                    string="Test Connection"
+                                    class="btn-link mt8"
+                                    icon="oi-arrow-right"
+                                    invisible="not l10n_sk_sapi_url"/>
+                        </div>
+                    </setting>
+                </block>
+            </block>
+        </field>
+    </record>
+</odoo>

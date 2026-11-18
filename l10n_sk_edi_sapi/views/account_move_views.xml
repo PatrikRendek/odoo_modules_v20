@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_move_form" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.l10n_sk_edi_sapi</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <sheet position="before">
+                <div class="alert alert-danger" role="alert" invisible="l10n_sk_sapi_state not in ('error', 'rejected')">
+                    The e-invoice was not delivered through the delivery service.
+                    <field name="l10n_sk_sapi_state_detail" nolabel="1" class="d-block"/>
+                </div>
+            </sheet>
+            <page name="other_info" position="inside">
+                <group string="Delivery Service" name="l10n_sk_sapi_group" invisible="not l10n_sk_sapi_document_id and not l10n_sk_sapi_state">
+                    <field name="l10n_sk_sapi_state"/>
+                    <field name="l10n_sk_sapi_document_id"/>
+                    <field name="l10n_sk_sapi_state_detail" invisible="not l10n_sk_sapi_state_detail"/>
+                </group>
+            </page>
+        </field>
+    </record>
+
+    <record id="view_out_invoice_tree" model="ir.ui.view">
+        <field name="name">account.move.out.invoice.list.inherit.l10n_sk_edi_sapi</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_out_invoice_tree"/>
+        <field name="arch" type="xml">
+            <field name="status_in_payment" position="before">
+                <field name="l10n_sk_sapi_state" optional="hide"/>
+            </field>
+        </field>
+    </record>
+</odoo>

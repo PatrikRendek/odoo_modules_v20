@@ -5,6 +5,7 @@ Private Odoo 20 modules written from scratch on top of standard Odoo. License: L
 | Module | Summary |
 | --- | --- |
 | [`l10n_sk_edi_einvoice`](l10n_sk_edi_einvoice/README.md) | Slovak rules for the mandatory e-invoice (EN 16931 / Peppol BIS Billing 3.0) |
+| [`l10n_sk_edi_sapi`](l10n_sk_edi_sapi/README.md) | Sending and receiving Slovak e-invoices through a certified delivery service (SAPI-SK) |
 
 Documents:
 
@@ -18,6 +19,7 @@ Súkromné moduly pre Odoo 20 napísané od nuly nad štandardným Odoo. Licenci
 | Modul | Zhrnutie |
 | --- | --- |
 | [`l10n_sk_edi_einvoice`](l10n_sk_edi_einvoice/README_sk.md) | Slovenské pravidlá pre povinnú elektronickú faktúru (EN 16931 / Peppol BIS Billing 3.0) |
+| [`l10n_sk_edi_sapi`](l10n_sk_edi_sapi/README_sk.md) | Odosielanie a príjem slovenských e-faktúr cez certifikovanú doručovaciu službu (SAPI-SK) |
 
 Dokumenty:
 
